@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unit Converter</title>
+  <meta name="description" content="Convert length, mass, temperature, volume, area, speed, time, data, energy and pressure instantly in your browser.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>Unit Converter</h1>
+      <p>Pick a measurement type, enter a value and read the result. Type in either box and the other updates.</p>
+    </header>
+
+    <nav id="categories" class="cats" aria-label="Measurement type"></nav>
+
+    <section class="converter" aria-label="Converter">
+      <div class="side">
+        <label class="label" for="fromValue">From</label>
+        <input id="fromValue" class="value" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="1">
+        <select id="fromUnit" class="unit" aria-label="From unit"></select>
+      </div>
+
+      <button id="swap" class="swap" type="button" aria-label="Swap units" title="Swap units">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 4v16M7 20l-3-3M7 20l3-3M17 20V4M17 4l-3 3M17 4l3 3"/>
+        </svg>
+      </button>
+
+      <div class="side">
+        <label class="label" for="toValue">To</label>
+        <input id="toValue" class="value" type="text" inputmode="decimal" autocomplete="off" spellcheck="false">
+        <select id="toUnit" class="unit" aria-label="To unit"></select>
+      </div>
+    </section>
+
+    <div class="bar">
+      <p id="formula" class="formula" role="status" aria-live="polite"></p>
+      <div class="bar-actions">
+        <label class="field" for="precision">Precision
+          <select id="precision">
+            <option value="4">4 digits</option>
+            <option value="6" selected>6 digits</option>
+            <option value="8">8 digits</option>
+            <option value="10">10 digits</option>
+          </select>
+        </label>
+        <button id="copy" class="btn" type="button">Copy result</button>
+      </div>
+    </div>
+
+    <section class="all" aria-labelledby="resultsTitle">
+      <h2 id="resultsTitle">In every unit</h2>
+      <ul id="results" class="results"></ul>
+    </section>
+
+    <footer class="foot">
+      Click any unit above to use it as the "To" unit. Values are rounded to the digits you choose.
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
