@@ -67,12 +67,6 @@ Add a new category by adding an object with `id`, `label`, the default `from` an
 - KB, MB and GB use 1,000 bytes. KiB, MiB and GiB use 1,024 bytes.
 - Results are rounded to the chosen number of significant digits.
 
-## Deploy with GitHub Pages
-
-1. Push the project to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-4. Your site will be live at `https://xitas.github.io/unit-converter/`.
 
 ## License
 
