@@ -29,7 +29,7 @@ No installation needed.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo>.git
+   git clone https://github.com/xitas/unit-converter.git
    cd <your-repo>
    ```
 2. Open `index.html` in your browser.
