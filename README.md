@@ -30,7 +30,7 @@ No installation needed.
 1. Clone the repository:
    ```bash
    git clone https://github.com/xitas/unit-converter.git
-   cd <your-repo>
+   cd unit-converter
    ```
 2. Open `index.html` in your browser.
 
