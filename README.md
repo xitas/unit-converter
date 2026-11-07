@@ -72,7 +72,7 @@ Add a new category by adding an object with `id`, `label`, the default `from` an
 1. Push the project to GitHub.
 2. Go to **Settings → Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-4. Your site will be live at `https://<your-username>.github.io/<your-repo>/`.
+4. Your site will be live at `https://xitas.github.io/unit-converter/`.
 
 ## License
 
