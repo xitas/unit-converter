@@ -2,6 +2,8 @@
 
 A fast unit converter built with plain HTML, CSS and JavaScript. No frameworks, no build step, and nothing leaves your browser.
 
+**Live demo:** [https://xitas.github.io/unit-converter/](https://xitas.github.io/unit-converter/)
+
 ## Features
 
 - **10 measurement types:** length, mass, temperature, volume, area, speed, time, data, energy and pressure
@@ -25,7 +27,7 @@ A fast unit converter built with plain HTML, CSS and JavaScript. No frameworks, 
 
 ## Getting started
 
-No installation needed.
+No installation needed. You can use the [live demo](https://xitas.github.io/unit-converter/) or run it locally.
 
 1. Clone the repository:
    ```bash
@@ -66,7 +68,6 @@ Add a new category by adding an object with `id`, `label`, the default `from` an
 - A year is 365.25 days.
 - KB, MB and GB use 1,000 bytes. KiB, MiB and GiB use 1,024 bytes.
 - Results are rounded to the chosen number of significant digits.
-
 
 ## License
 
